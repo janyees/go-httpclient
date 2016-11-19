@@ -1,4 +1,7 @@
 ## Changelog
+### v0.6 (2016-11-19)
+
+Add `PostRaw` method
 
 ### v0.5.1 (2015-12-31)
 

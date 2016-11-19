@@ -1,8 +1,6 @@
 # go-httpclient 
 
-[![Travis](https://img.shields.io/travis/ddliu/go-httpclient.svg?style=flat-square)](https://travis-ci.org/ddliu/go-httpclient)
-[![godoc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square)](https://godoc.org/github.com/ddliu/go-httpclient)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
+copy from ddliu's httpclient
 
 Advanced HTTP client for golang.
 
@@ -19,7 +17,7 @@ Advanced HTTP client for golang.
 ## Installation
 
 ```bash
-go get github.com/ddliu/go-httpclient
+go get github.com/janyees/go-httpclient
 ```
 
 ## Quick Start
@@ -28,7 +26,7 @@ go get github.com/ddliu/go-httpclient
 package main
 
 import (
-    "github.com/ddliu/go-httpclient"
+    "github.com/janyees/go-httpclient"
 )
 
 func main() {
