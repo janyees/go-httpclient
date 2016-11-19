@@ -19,6 +19,7 @@ var Get func(string, map[string]string) (*Response, error)
 var Delete func(string, map[string]string) (*Response, error)
 var Head func(string, map[string]string) (*Response, error)
 var Post func(string, map[string]string) (*Response, error)
+var PostRaw func(string,string)(*Response,error)
 var PostMultipart func(string, map[string]string) (*Response, error)
 var WithOption func(int, interface{}) *HttpClient
 var WithOptions func(Map) *HttpClient
@@ -38,6 +39,7 @@ func init() {
 	Delete = defaultClient.Delete
 	Head = defaultClient.Head
 	Post = defaultClient.Post
+	PostRaw=defaultClient.PostRaw
 	PostMultipart = defaultClient.PostMultipart
 	WithOption = defaultClient.WithOption
 	WithOptions = defaultClient.WithOptions

@@ -671,6 +671,14 @@ func (this *HttpClient) PostMultipart(url string, params map[string]string) (
 
 	return this.Do("POST", url, headers, body)
 }
+func (this *HttpClient) PostRaw(url string, rawBody string) (
+*Response, error) {
+	headers := make(map[string]string)
+	headers["Content-Type"] = "application/x-www-form-urlencoded"
+	body := strings.NewReader(rawBody)
+
+	return this.Do("POST", url, headers, body)
+}
 
 // Get cookies of the client jar.
 func (this *HttpClient) Cookies(url_ string) []*http.Cookie {
